@@ -1,20 +1,17 @@
 package singlenum
 
+import "slices"
+
 func singleNumber(nums []int) int {
-    set := map[int]bool{}
+	slices.Sort(nums)
 
-    for _, n := range nums {
-        if set[n] {
-            delete(set, n)
-            continue
-        }
+	for i := 0; i < len(nums)-1; i++ {
+		n := nums[i]
+		if n != nums[i+1] {
+			return n
+		}
+        i++
+	}
 
-        set[n] = true
-    }
-
-    for n := range set {
-        return n
-    }
-
-    return -1
+	return nums[len(nums)-1]
 }
