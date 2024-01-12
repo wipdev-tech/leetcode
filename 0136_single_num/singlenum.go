@@ -10,7 +10,7 @@ func singleNumber(nums []int) int {
 		if n != nums[i+1] {
 			return n
 		}
-        i++
+		i++
 	}
 
 	return nums[len(nums)-1]
