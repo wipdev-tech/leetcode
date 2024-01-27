@@ -1,4 +1,4 @@
-package main
+package removeelement
 
 func removeElement(nums []int, val int) int {
 	removed := make([]int, 0, len(nums))
