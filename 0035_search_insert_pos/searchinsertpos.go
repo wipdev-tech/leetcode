@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// UNSOLVED
 func searchInsert(nums []int, target int) int {
 	fmt.Println(nums, target)
 	if target > nums[len(nums)-1] {

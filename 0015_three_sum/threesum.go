@@ -2,8 +2,7 @@ package threesum
 
 import "slices"
 
-// THIS CODE ONLY PASSES THE TEST CASES BUT NOT THE FINAL SUBMISSION
-
+// UNSOVLED - ONLY PASSES THE TEST CASES BUT NOT THE FINAL SUBMISSION
 func threeSum(nums []int) [][]int {
 	slices.Sort(nums)
 	if nums[0] > 0 || nums[len(nums)-1] < 0 {
